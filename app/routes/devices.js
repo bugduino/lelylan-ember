@@ -1,7 +1,10 @@
 export default Ember.Route.extend({
   model: function() {
-    this.get('store').find('device');
+    this.get('store').find('device').then( function(res) {
+      debugger;
+    });
   },
-  setupController: function(controller, model) {
+  afterModel: function(model, queryParams) {
+    debugger;
   }
 });
