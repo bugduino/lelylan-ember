@@ -1,5 +1,6 @@
 import Resolver from 'ember/resolver';
 import oauth from 'appkit/oauth2';
+import store from 'appkit/store';
 
 var App = Ember.Application.extend({
   LOG_ACTIVE_GENERATION: true,
@@ -9,6 +10,8 @@ var App = Ember.Application.extend({
   LOG_VIEW_LOOKUPS: true,
   modulePrefix: 'appkit', // TODO: loaded via config
   Resolver: Resolver['default'],
+
+  store: store,
   oauth: Ember.OAuth2.create({
     providerId: 'lelylan'
   })
