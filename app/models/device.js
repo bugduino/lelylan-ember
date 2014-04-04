@@ -2,7 +2,6 @@ var attr = DS.attr;
 
 export default DS.Model.extend({
   uri: attr(),
-  id: attr(),
   name: attr(),
   type: attr(),
   physical: attr(),
