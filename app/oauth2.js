@@ -3,7 +3,7 @@ export default Ember.OAuth2.config = {
     clientId: "xxx",
     authBaseUri: 'http://people.lelylan.com/oauth/authorize',
     redirectUri: 'http://localhost:8000/vendor/callback',
-    client_secret: "xxx",
+    client_secret: "xxxx",
     scope: 'devices',
     statePrefix: "lelylan"
   } 
